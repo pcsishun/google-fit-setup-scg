@@ -1,0 +1,71 @@
+[
+    {
+        "startTimeMillis": "1654621200000",
+        "endTimeMillis": "1654707600000",
+        "dataset": [
+            {
+                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                "point": [
+                    {
+                        "startTimeNanos": "1654621659719517097",
+                        "endTimeNanos": "1654707600000000000",
+                        "dataTypeName": "com.google.step_count.delta",
+                        "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                        "value": [
+                            {
+                                "intVal": 4560,
+                                "mapVal": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "startTimeMillis": "1654707600000",
+        "endTimeMillis": "1654794000000",
+        "dataset": [
+            {
+                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                "point": [
+                    {
+                        "startTimeNanos": "1654707600000000000",
+                        "endTimeNanos": "1654793712570081464",
+                        "dataTypeName": "com.google.step_count.delta",
+                        "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                        "value": [
+                            {
+                                "intVal": 2189,
+                                "mapVal": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "startTimeMillis": "1654794000000",
+        "endTimeMillis": "1654863013121",
+        "dataset": [
+            {
+                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                "point": [
+                    {
+                        "startTimeNanos": "1654794060000000000",
+                        "endTimeNanos": "1654862040000000000",
+                        "dataTypeName": "com.google.step_count.delta",
+                        "originDataSourceId": "raw:com.google.step_count.delta:com.xiaomi.hm.health:GoogleFitSyncHelper- steps",
+                        "value": [
+                            {
+                                "intVal": 516,
+                                "mapVal": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
