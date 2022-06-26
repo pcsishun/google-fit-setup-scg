@@ -1,71 +1,993 @@
-[
-    {
-        "startTimeMillis": "1654621200000",
-        "endTimeMillis": "1654707600000",
-        "dataset": [
-            {
-                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
-                "point": [
-                    {
-                        "startTimeNanos": "1654621659719517097",
-                        "endTimeNanos": "1654707600000000000",
-                        "dataTypeName": "com.google.step_count.delta",
-                        "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
-                        "value": [
-                            {
-                                "intVal": 4560,
-                                "mapVal": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+{
+    "userprofile": {
+        "firstname": "Sorrakrit",
+        "lastname": "Chaiyaworrakamol",
+        "email": "pcsishun@gmail.com",
+        "phone": "94546456"
     },
-    {
-        "startTimeMillis": "1654707600000",
-        "endTimeMillis": "1654794000000",
-        "dataset": [
-            {
-                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
-                "point": [
-                    {
-                        "startTimeNanos": "1654707600000000000",
-                        "endTimeNanos": "1654793712570081464",
-                        "dataTypeName": "com.google.step_count.delta",
-                        "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
-                        "value": [
-                            {
-                                "intVal": 2189,
-                                "mapVal": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "startTimeMillis": "1654794000000",
-        "endTimeMillis": "1654863013121",
-        "dataset": [
-            {
-                "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
-                "point": [
-                    {
-                        "startTimeNanos": "1654794060000000000",
-                        "endTimeNanos": "1654862040000000000",
-                        "dataTypeName": "com.google.step_count.delta",
-                        "originDataSourceId": "raw:com.google.step_count.delta:com.xiaomi.hm.health:GoogleFitSyncHelper- steps",
-                        "value": [
-                            {
-                                "intVal": 516,
-                                "mapVal": []
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-]
+    "googleFit": [
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655312400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655226103783556502",
+                            "endTimeNanos": "1655307529782167693",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 6201,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655312400000",
+            "endTimeMillis": "1655398800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655313430751518240",
+                            "endTimeNanos": "1655398746070277263",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 4158,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655398800000",
+            "endTimeMillis": "1655485200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655401921542991090",
+                            "endTimeNanos": "1655483814806174704",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 5383,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655485200000",
+            "endTimeMillis": "1655571600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655485325749294008",
+                            "endTimeNanos": "1655571598531261275",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.xiaomi.hm.health:GoogleFitSyncHelper- steps",
+                            "value": [
+                                {
+                                    "intVal": 2455,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655571600000",
+            "endTimeMillis": "1655658000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655571603746105715",
+                            "endTimeNanos": "1655656835567994325",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 3819,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655658000000",
+            "endTimeMillis": "1655744400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655658862338535531",
+                            "endTimeNanos": "1655744128273249383",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 4253,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655744400000",
+            "endTimeMillis": "1655830800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655744522845028686",
+                            "endTimeNanos": "1655830305544498950",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 4570,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655830800000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655830918069000000",
+                            "endTimeNanos": "1655886826016208240",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "intVal": 1735,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655312400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655226000000000000",
+                            "endTimeNanos": "1655312400000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1739.2579243984073,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655312400000",
+            "endTimeMillis": "1655398800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655312400000000000",
+                            "endTimeNanos": "1655398800000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1592.9211208276738,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655398800000",
+            "endTimeMillis": "1655485200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655398800000000000",
+                            "endTimeNanos": "1655485200000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1771.26327114223,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655485200000",
+            "endTimeMillis": "1655571600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655485200000000000",
+                            "endTimeNanos": "1655571600000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1617.5870396423647,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655571600000",
+            "endTimeMillis": "1655658000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655571600000000000",
+                            "endTimeNanos": "1655658000000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1638.6071563303806,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655658000000",
+            "endTimeMillis": "1655744400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655658000000000000",
+                            "endTimeNanos": "1655744400000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1676.3868416780074,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655744400000",
+            "endTimeMillis": "1655830800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655744400000000000",
+                            "endTimeNanos": "1655830800000000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1712.0572401916402,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655830800000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.calories.expended:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655830800000000000",
+                            "endTimeNanos": "1655887372120000000",
+                            "dataTypeName": "com.google.calories.expended",
+                            "originDataSourceId": "derived:com.google.calories.expended:com.google.android.gms:merge_calories_expended",
+                            "value": [
+                                {
+                                    "fpVal": 1072.7396879452585,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655312400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655256060000000000",
+                            "endTimeNanos": "1655303580000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 85,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655312400000",
+            "endTimeMillis": "1655398800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655339700000000000",
+                            "endTimeNanos": "1655395080000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 50,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655398800000",
+            "endTimeMillis": "1655485200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655428260000000000",
+                            "endTimeNanos": "1655477520000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 61,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655485200000",
+            "endTimeMillis": "1655571600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655485380000000000",
+                            "endTimeNanos": "1655569440000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.activity.segment:com.google.android.gms:merge_activity_segments",
+                            "value": [
+                                {
+                                    "intVal": 848,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655571600000",
+            "endTimeMillis": "1655658000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655573520000000000",
+                            "endTimeNanos": "1655644020000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 45,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655658000000",
+            "endTimeMillis": "1655744400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655660040000000000",
+                            "endTimeNanos": "1655743440000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 57,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655744400000",
+            "endTimeMillis": "1655830800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655772780000000000",
+                            "endTimeNanos": "1655830140000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 53,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655830800000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.active_minutes:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655834520000000000",
+                            "endTimeNanos": "1655886720000000000",
+                            "dataTypeName": "com.google.active_minutes",
+                            "originDataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps",
+                            "value": [
+                                {
+                                    "intVal": 27,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655312400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655296920000000000",
+                            "endTimeNanos": "1655296980000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 1,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 1,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655312400000",
+            "endTimeMillis": "1655398800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655355780000000000",
+                            "endTimeNanos": "1655377260000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 2,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 2,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655398800000",
+            "endTimeMillis": "1655485200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655475720000000000",
+                            "endTimeNanos": "1655475900000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 2,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 2,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655485200000",
+            "endTimeMillis": "1655571600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655563560000000000",
+                            "endTimeNanos": "1655563620000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 1,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 1,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655571600000",
+            "endTimeMillis": "1655658000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655641260000000000",
+                            "endTimeNanos": "1655643480000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 3,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 3,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655658000000",
+            "endTimeMillis": "1655744400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655721120000000000",
+                            "endTimeNanos": "1655721180000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 1,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 1,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655744400000",
+            "endTimeMillis": "1655830800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655818140000000000",
+                            "endTimeNanos": "1655818200000000000",
+                            "dataTypeName": "com.google.heart_minutes.summary",
+                            "value": [
+                                {
+                                    "fpVal": 1,
+                                    "mapVal": []
+                                },
+                                {
+                                    "intVal": 1,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655830800000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.heart_minutes.summary:com.google.android.gms:aggregated",
+                    "point": []
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655312400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655230928231630436",
+                            "endTimeNanos": "1655307529782167693",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 3426.328242301941,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655312400000",
+            "endTimeMillis": "1655398800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655314864972000000",
+                            "endTimeNanos": "1655395201517895940",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 2204.8105087280273,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655398800000",
+            "endTimeMillis": "1655485200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655404496312959772",
+                            "endTimeNanos": "1655478345467897719",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 2944.953386425972,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655485200000",
+            "endTimeMillis": "1655571600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655485325749294008",
+                            "endTimeNanos": "1655569456057189034",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.distance.delta:com.xiaomi.hm.health:GoogleFitSyncHelper- distance",
+                            "value": [
+                                {
+                                    "fpVal": 1595.8477486222982,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655571600000",
+            "endTimeMillis": "1655658000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655571969251676019",
+                            "endTimeNanos": "1655655567223191296",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 1761.7319779396057,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655658000000",
+            "endTimeMillis": "1655744400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655660048727879617",
+                            "endTimeNanos": "1655743459195235063",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 2469.5669918060303,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655744400000",
+            "endTimeMillis": "1655830800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655745328196973056",
+                            "endTimeNanos": "1655830305544498950",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 2624.3336248397827,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655830800000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.distance.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655831010709326647",
+                            "endTimeNanos": "1655886695489506287",
+                            "dataTypeName": "com.google.distance.delta",
+                            "originDataSourceId": "raw:com.google.step_count.cumulative:samsung:SM-A207F:4b9339f1:Step Counter",
+                            "value": [
+                                {
+                                    "fpVal": 950.1605839729309,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.height:com.google.android.gms:merge_height",
+                    "point": []
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.weight:com.google.android.gms:merge_weight",
+                    "point": []
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1655226000000",
+            "endTimeMillis": "1655887372120",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.sleep.segment:com.google.android.gms:merged",
+                    "point": [
+                        {
+                            "startTimeNanos": "1655250960000000000",
+                            "endTimeNanos": "1655253360000000000",
+                            "dataTypeName": "com.google.sleep.segment",
+                            "originDataSourceId": "raw:com.google.sleep.segment:com.xiaomi.hm.health:GoogleFitSyncHelper- sleep segments",
+                            "value": [
+                                {
+                                    "intVal": 4,
+                                    "mapVal": []
+                                }
+                            ]
+                        },
+                        {
+                            "startTimeNanos": "1655253360000000000",
+                            "endTimeNanos": "1655256060000000000",
+                            "dataTypeName": "com.google.sleep.segment",
+                            "originDataSourceId": "raw:com.google.sleep.segment:com.xiaomi.hm.health:GoogleFitSyncHelper- sleep segments",
+                            "value": [
+                                {
+                                    "intVal": 4,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
