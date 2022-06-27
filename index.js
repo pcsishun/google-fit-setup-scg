@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('./connection/connection').connect();
 
 const express = require("express");
 const cors = require("cors");
@@ -7,6 +8,9 @@ const { google } = require("googleapis");
 const urlParse = require("url-parse");
 const queryParse = require('query-string');
 const request = require('request');
+
+// import database //
+const UserProfileStatus = require("./model/userProfileStatus");
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -269,8 +273,9 @@ app.get("/stepnext", async (req, res) => {
                     dataSourceId: "derived:com.google.sleep.segment:com.google.android.gms:merged"
                 }
             ],
+            activityType: 72,
             endTimeMillis: 1655887372120,
-            startTimeMillis: 1655226000000
+            startTimeMillis: 1654794000000
         }
 
         const resultSleep = await axios.post(
@@ -280,12 +285,13 @@ app.get("/stepnext", async (req, res) => {
         );
 
         // extract data in api // 
+  
+
         // console.log("result.data ==> ",result);
-        
-        console.log("globalFirstname ==>",globalFirstname);
-        console.log("globalLastname ==>",globalLastname);
-        console.log("globalPhone ==>",globalPhone);
-        console.log("globalEmail ==>",globalEmail); 
+        // console.log("globalFirstname ==>",globalFirstname);
+        // console.log("globalLastname ==>",globalLastname);
+        // console.log("globalPhone ==>",globalPhone);
+        // console.log("globalEmail ==>",globalEmail); 
 
         let userProfile = {
             userprofile:{
@@ -297,6 +303,7 @@ app.get("/stepnext", async (req, res) => {
             googleFit:[]
         }
 
+        
         const isResultStepCount = result.data.bucket;
         const isResultCalories = resultCalories.data.bucket;
         const isResultActiveMinutes = resultActiveMinutes.data.bucket;
@@ -347,10 +354,14 @@ app.get("/stepnext", async (req, res) => {
             userProfile.googleFit.push(element)
         });
 
-        res.send(userProfile);
-
+        try{
+            await UserProfileStatus.create(userProfile);
+            res.send(`<h2 style="text-align: center; margin-top:30%;">Success sync data. <a href="http://localhost:3000">back to homepage</a></h2>`);
+        }catch(err){
+            console.log("err collect data ==>",err);
+            res.send("Fail sync data to database.", err);
+        }
     } catch (err) {
-
         // if(err.response.data){
         //     console.log("err data  ===> ",err.response.data);
         //     console.log("err status  ===> ",err.response.status);
@@ -359,10 +370,10 @@ app.get("/stepnext", async (req, res) => {
         // }else{
         //     res.send(err); 
         // }  
-
-        console.log("err data  ===> ", err.response.data);
-        console.log("err status  ===> ", err.response.status);
-        console.log("err headers  ===> ", err.response.headers);
+        // console.log("err data  ===> ", err.response.data);
+        // console.log("err status  ===> ", err.response.status);
+        // console.log("err headers  ===> ", err.response.headers);
+        console.log("err API  ==>",err);
         res.send(err)
     }
 });
