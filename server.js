@@ -32,11 +32,11 @@ app.get("/", (req, res) => {
 });
 
 app.post("/testingfit", (req, res) => {
-    const {keyId} = req.body;
-    console.log("keyId set ==> ",keyId)
+    // const {keyId} = req.body;
+    // console.log("keyId set ==> ",keyId)
     const oauth2Client = new google.auth.OAuth2(
         "89022275209-bm686pnt5ikf5hd3ghn4th4cd264bur6.apps.googleusercontent.com",
-        "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",
+        "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",
         // "http://localhost:8085/stepnext",
         // "http://localhost:8085/stepblood"
         "https://test-google-fit-zt27agut7a-uc.a.run.app/stepnext"
@@ -82,7 +82,7 @@ app.post("/testingfit", (req, res) => {
 app.get("/stepnext", async (req, res) => {
     // const query2 = new urlParse(req)
     const queryUrl = new urlParse(req.url);
-    console.log("queryUrl", queryUrl)
+    // console.log("queryUrl", queryUrl)
     // console.log("queryUrl ===> ", queryUrl);
     // console.log("globalFirstname ==>",globalFirstname);
     // console.log("globalLastname ==>",globalLastname);
@@ -94,7 +94,7 @@ app.get("/stepnext", async (req, res) => {
 
     const oauth2Client = new google.auth.OAuth2(
         "89022275209-bm686pnt5ikf5hd3ghn4th4cd264bur6.apps.googleusercontent.com",
-        "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",
+        "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",
         // "http://localhost:8085/stepnext",
         // "http://localhost:8085/stepblood"
         "https://test-google-fit-zt27agut7a-uc.a.run.app/stepnext"
@@ -103,27 +103,27 @@ app.get("/stepnext", async (req, res) => {
     // console.log("oauth2Client ==> ",oauth2Client)
 
     const tokens = await oauth2Client.getToken(code);
+    // console.log("tokens ==> ", tokens.tokens.access_token);
 
-    const date = new Date();
+    // const date = new Date();
 
-    const datePreviousMili = date.setDate(date.getDate() - 2);
-    const dateNowMili = date.setDate(date.getDate());
+    // const datePreviousMili = date.setDate(date.getDate() - 2);
+    // const dateNowMili = date.setDate(date.getDate());
 
-    console.log("dateNowMili ===> ", dateNowMili);
-    console.log("datePreviousMili ===>", datePreviousMili);
+    // console.log("dateNowMili ===> ", dateNowMili);
+    // console.log("datePreviousMili ===>", datePreviousMili);
 
     try {
 
         const headerConfig = {
             headers: {
                 "Content-Type": "application/json",
-                authorization: "Bearer " + tokens.tokens.access_token
+                authorization: "Bearer "+ tokens.tokens.access_token
             }
         }
 
         // API getting step_count // 
         const payload = {
-
             aggregateBy: [
                 {
                     dataTypeName: "com.google.step_count.delta",
@@ -141,8 +141,9 @@ app.get("/stepnext", async (req, res) => {
             payload,
             headerConfig
         );
+        // console.log(result.data.bucket)
 
-        // API getting calories // 
+        // // API getting calories // 
         const payloadCalories = {
             aggregateBy: [
                 {
@@ -162,6 +163,8 @@ app.get("/stepnext", async (req, res) => {
             payloadCalories,
             headerConfig
         );
+
+        
 
         // API get active_minutes // 
         const payloadActiveMinutes = {
@@ -356,7 +359,7 @@ app.get("/stepnext", async (req, res) => {
             res.send("Fail sync data to database.", err);
         }
     } catch (err) {
-        console.log("err API  ==>",err);
+        console.log("err API  ==>",err.data);
         res.send(err)
     }
 });
