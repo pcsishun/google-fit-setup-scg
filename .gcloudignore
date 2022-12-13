@@ -12,6 +12,9 @@
 # below:
 .git
 .gitignore
+dataMiFit.json
+index2.js
+test.js
 
 # Node.js dependencies:
 node_modules/

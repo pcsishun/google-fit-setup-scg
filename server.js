@@ -1,39 +1,47 @@
-require('dotenv').config();
-require('./connection/connection').connect();
+// require('dotenv').config();
+// require('./connection/connection').connect();
 
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-const { google } = require("googleapis");
+const {google}  = require("googleapis"); // google fit
 const urlParse = require("url-parse");
-const queryParse = require('query-string');
-const request = require('request');
+const queryParse = require("query-string");
+const request = require("request");
 
 // import database //
-const UserProfileStatus = require("./model/userProfileStatus");
+// const UserProfileStatus = require("./model/userProfileStatus");
 
 const app = express();
+app.enable('trust proxy');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
+
 const port = 8085;
 
-let globalFirstname; 
-let globalLastname;
-let globalEmail;
-let globalPhone; 
+// let globalFirstname; 
+// let globalLastname;
+// let globalEmail;
+// let globalPhone; 
+
+
+app.get("/", (req, res) => {
+    res.send("OK")
+});
 
 app.post("/testingfit", (req, res) => {
-    const {firstname ,lastname, email, phone} = req.body;
+    const {keyId} = req.body;
+    console.log("keyId set ==> ",keyId)
     const oauth2Client = new google.auth.OAuth2(
-        "817348506088-l68q11t2r373vohlq2sr1jsj2n210ilf.apps.googleusercontent.com",
-        "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",
-        "http://localhost:8085/stepnext",
+        "89022275209-bm686pnt5ikf5hd3ghn4th4cd264bur6.apps.googleusercontent.com",
+        "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",
+        // "http://localhost:8085/stepnext",
         // "http://localhost:8085/stepblood"
-        // "https://test-google-fit-dot-testdeploy-330007.as.r.appspot.com/stepnext"
+        "https://test-google-fit-zt27agut7a-uc.a.run.app/stepnext"
     );
-
+        // https://test-google-fit-zt27agut7a-uc.a.run.app/
     // const scopes = ["https://www.googleapis.com/auth/fitness.activity.read profile email openid"];
 
     const scopes = ["https://www.googleapis.com/auth/fitness.activity.read",
@@ -58,18 +66,11 @@ app.post("/testingfit", (req, res) => {
         })
     });
 
-    // const wraping = {
-    //     url: url, 
-    //     firstname: firstname,
-    //     lastname:lastname,
-    //     email:email,
-    //     phone: phone
-    // }
-    globalFirstname = firstname;
-    globalLastname = lastname; 
-    globalEmail = email;
-    globalPhone = phone;
-    console.log("globalFirstname ==>",globalFirstname)
+    // globalFirstname = firstname;
+    // globalLastname = lastname; 
+    // globalEmail = email;
+    // globalPhone = phone;
+    // console.log("globalFirstname ==>",globalFirstname)
 
     request(url, (err, response, body) => {
         console.log('error: ', err);
@@ -81,23 +82,22 @@ app.post("/testingfit", (req, res) => {
 app.get("/stepnext", async (req, res) => {
     // const query2 = new urlParse(req)
     const queryUrl = new urlParse(req.url);
- 
-    
+    console.log("queryUrl", queryUrl)
     // console.log("queryUrl ===> ", queryUrl);
-    console.log("globalFirstname ==>",globalFirstname);
-    console.log("globalLastname ==>",globalLastname);
-    console.log("globalPhone ==>",globalPhone);
-    console.log("globalEmail ==>",globalEmail);
+    // console.log("globalFirstname ==>",globalFirstname);
+    // console.log("globalLastname ==>",globalLastname);
+    // console.log("globalPhone ==>",globalPhone);
+    // console.log("globalEmail ==>",globalEmail);
 
     const code = queryParse.parse(queryUrl.query).code;
     // console.log("code ==> ", code);
 
     const oauth2Client = new google.auth.OAuth2(
-        "817348506088-l68q11t2r373vohlq2sr1jsj2n210ilf.apps.googleusercontent.com",
-        "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",
-        "http://localhost:8085/stepnext",
+        "89022275209-bm686pnt5ikf5hd3ghn4th4cd264bur6.apps.googleusercontent.com",
+        "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",
+        // "http://localhost:8085/stepnext",
         // "http://localhost:8085/stepblood"
-        // "https://test-google-fit-dot-testdeploy-330007.as.r.appspot.com/stepnext"
+        "https://test-google-fit-zt27agut7a-uc.a.run.app/stepnext"
     );
 
     // console.log("oauth2Client ==> ",oauth2Client)
@@ -285,21 +285,14 @@ app.get("/stepnext", async (req, res) => {
         );
 
         // extract data in api // 
-  
-
-        // console.log("result.data ==> ",result);
-        // console.log("globalFirstname ==>",globalFirstname);
-        // console.log("globalLastname ==>",globalLastname);
-        // console.log("globalPhone ==>",globalPhone);
-        // console.log("globalEmail ==>",globalEmail); 
 
         let userProfile = {
-            userprofile:{
-                firstname: globalFirstname,
-                lastname:globalLastname,
-                email:globalEmail,
-                phone:globalPhone,
-            },
+            // userprofile:{
+            //     firstname: globalFirstname,
+            //     lastname:globalLastname,
+            //     email:globalEmail,
+            //     phone:globalPhone,
+            // },
             googleFit:[]
         }
 
@@ -355,24 +348,14 @@ app.get("/stepnext", async (req, res) => {
         });
 
         try{
-            await UserProfileStatus.create(userProfile);
-            res.send(`<h2 style="text-align: center; margin-top:30%;">Success sync data. <a href="http://localhost:3000">back to homepage</a></h2>`);
+            // await UserProfileStatus.create(userProfile);
+            // res.send(`<h2 style="text-align: center; margin-top:30%;">Success sync data. <a href="http://localhost:3000">back to homepage</a></h2>`);
+            res.send(userProfile)
         }catch(err){
             console.log("err collect data ==>",err);
             res.send("Fail sync data to database.", err);
         }
     } catch (err) {
-        // if(err.response.data){
-        //     console.log("err data  ===> ",err.response.data);
-        //     console.log("err status  ===> ",err.response.status);
-        //     console.log("err headers  ===> ",err.response.headers);
-        //     res.send(err);
-        // }else{
-        //     res.send(err); 
-        // }  
-        // console.log("err data  ===> ", err.response.data);
-        // console.log("err status  ===> ", err.response.status);
-        // console.log("err headers  ===> ", err.response.headers);
         console.log("err API  ==>",err);
         res.send(err)
     }
